@@ -11,11 +11,7 @@
     },
 {
       "src": "/wp-includes/js/codemirror/codemirror.min.js",
-      "dest": "/public/wp-includes/js/codemirror/codemirror.min.js"
-    },
-    {
-      "src": "/wp-includes/js/codemirror/codemirror.min.css",
-      "dest": "/public/wp-includes/js/codemirror/codemirror.min.css"
+      "dest": "/wp-includes/js/codemirror/codemirror.min.js"
     }
   ]
 }
