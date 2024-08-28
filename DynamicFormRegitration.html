@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: aqua;
+        }
+        form
+        {
+            background-color: orange;
+            margin: 0% 20%;
+            padding-left: 5%;
+           
+        }
+        #d1
+        {
+            position: relative;
+            display: inline-flex;   
+            width: 100%;  
+            margin-bottom: 2%;      
+        }
+        .d2
+        {           
+            width: 30%;
+        }
+        .d3
+        {
+            width: 40%;
+        }
+        label
+        {
+            font-size: 24px;
+        }
+        input
+        {
+           font-size: 20px;
+           width: 78%;
+        }
+        optgroup
+        {
+            font-size: 20px;
+        }
+        select
+        {
+            width: 80%;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form method="get" action="./WebPageTable.html">
+        <h1>Student Registration Form</h1>
+        <div id="d1">
+                <div class="d2"><label>First Name</label></div>
+                <div class="d3"><input type="text" name="fname" placeholder="Enter Your First Name" autofocus required></div>
+        </div> 
+        <div id="d1">
+            <div class="d2"><label>Last Name</label></div>
+            <div class="d3"><input type="text" name="lname" placeholder="Enter Your Last Name" required></div>
+       </div>
+       <div id="d1">
+        <div class="d2"><label>Email</label></div>
+        <div class="d3"><input type="email" name="mail" placeholder="Enter Your Email Name" required></div>
+       </div>
+       <div id="d1">
+        <div class="d2"><label>Date of Birth</label></div>
+        <div class="d3"><input style="width: 80%;" type="date" name="dob" placeholder="Enter Your DOB" required></div>
+       </div>
+       <div id="d1">
+        <div class="d2"><label>Gender</label></div>
+        <div class="d3"><label>Male</label> <input style="width: auto;" type="radio" name="gender" required> <label>Female</label> <input type="radio" 
+            name="gender" style="width: auto;" required></div>
+       </div>
+       <div id="d1">
+        <div class="d2"><label>Courses</label></div>
+        <div class="d3"><select name="course">
+                      <optgroup>
+                        <option value="select">Select</option>
+                        <option value="DM">Digital Marketing</option>
+                        <option value="DS">Data Science</option>
+                        <option value="FullStack">FullStack Developer</option>
+                        <option value="cyber">Cyber Security</option>
+                    </optgroup>
+                       </select>
+         </div>
+       </div>
+       <div id="d1">
+        <div class="d2"><label>URL</label></div>
+        <div class="d3"><input type="url" name="myurl" required></div>
+       </div>
+       <div id="d1">
+        <div class="d2"><label>Mobile No. </label></div>
+        <div class="d3"><input type="tel" name="telephone" maxlength="10" required></div>
+       </div>
+       <div id="d1">
+        <div class="d2"><label>Age. </label></div>
+        <div class="d3"><input type="number" name="stdage" value="18" min="1" max="100"  required></div>
+       </div>
+
+       <div id="d1">
+        <div class="d2"><label>Rating 1 to 10 - </label></div>
+        <div class="d3"><input type="range" name="rating"  min="1" max="10"  required></div>
+       </div>
+       
+       
+       <div id="d1">
+        <div class="d2"><label>Comments- </label></div>
+        <div class="d3"><textarea style="width: 78%;"></textarea></div>
+       </div>
+       
+       <div id="d1">
+        <div class="d2"><label>Color</label></div>
+        <div class="d3"><input type="color"></div>
+       </div>
+       
+       <div id="d1">
+        <div class="d2"><label>Select Mode of Payment</label></div>
+        <div class="d3"><input type="text" list="paymentlist">
+        <datalist id="paymentlist">
+            <option value="cash"></option>
+            <option value="Online"></option>
+        </datalist>
+        </div>
+       </div>
+
+       <div id="d1">
+        <div class="d2"><label>Downloading</label></div>
+        <div class="d3"><progress value="10" max="100" style="width: 80%;"></progress></div>
+       </div>
+       
+
+
+        <button type="submit">Registration</button>
+    </form>
+</body>
+</html>
